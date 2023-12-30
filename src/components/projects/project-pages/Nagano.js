@@ -111,7 +111,7 @@ export default function Nagano(props) {
 
 
                             <div className="flex items-center justify-center">
-                                <Link className="w-20" to="/portfolio/nagano">
+                                <Link className="w-20" onClick={props.scrollToTop}>
                                     <dd className="text-sm text-gray-500 hover:text-black underline underline-offset-2">
                                         Back to top
                                     </dd>

@@ -33,7 +33,7 @@ export default function Encapsulate(props) {
 
                 <div className="mx-auto max-w-2xl items-center px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-6 lg:py-5 lg:pb-0">
                     <p className="mt-0 text-gray-500">
-                        Encapsulate was first mocked up in Figma so that we as a team knew what we were aiming to make. Then, we converted our Figma prototype into a static HTML and CSS web page. This static mockup did not include use of JavaScript and thus is not interactive. After we had our static version of Encapsulate, we converted it again into a React applciation. Finally, once we made the successful conversion, we started making our features actually work. This process involved state and event handling, connecting the app to a Firebase real time database, and enabling the use of the database to pull data and display it on the application. Because of the application's connection to Firebase, Encapsulate's displayed data is able to stay persistent through page refreshes and support clothing item image displays.
+                        Encapsulate was first mocked up in Figma so that we as a team knew what we were aiming to make. Then, we converted our Figma prototype into a static HTML and CSS web page. This static mockup did not include use of JavaScript and thus is not interactive. After we had our static version of Encapsulate, we converted it again into a React application. Finally, once we made the successful conversion, we started making our features actually work. This process involved state and event handling, connecting the app to a Firebase real time database, and enabling the use of the database to pull data and display it on the application. Because of the application's connection to Firebase, Encapsulate's displayed data is able to stay persistent through page refreshes and support clothing item image displays.
                     </p>
                 </div>
 
@@ -105,7 +105,7 @@ export default function Encapsulate(props) {
                             </div>
 
                             <div className="flex items-center justify-center">
-                                <Link className="w-20" to="/portfolio/encapsulate">
+                                <Link className="w-20" onClick={props.scrollToTop}>
                                     <dd className="text-sm text-gray-500 hover:text-black underline underline-offset-2">
                                         Back to top
                                     </dd>

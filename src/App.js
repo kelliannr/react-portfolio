@@ -16,7 +16,7 @@ import DiscGlobe from "./components/projects/project-pages/DiscGlobe.js";
 import AccessibleAccess from "./components/projects/project-pages/AccessibleAccess.js";
 import Nagano from "./components/projects/project-pages/Nagano.js";
 
-import Footer from "./components/projects/Footer.js";
+import Footer from "./components/Footer.js";
 
 export default function App() {
   // const location = useLocation();
@@ -30,6 +30,11 @@ export default function App() {
   //   HSStaticMethods.autoInit();
   // }, [location.pathname]);
 
+  /* function from https://www.codingbeautydev.com/blog/react-scroll-to-top-of-page */
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="flex flex-col h-screen justify-between">
       <Navbar />
@@ -42,15 +47,15 @@ export default function App() {
           <Route path="" element={ <ProjectList />} />
 
           {/* curent projects */}
-          <Route path="wordplay" element={<Wordplay />} />
+          <Route path="wordplay" element={<Wordplay scrollToTop={scrollToTop} />} />
           
           {/* project archive */}
-          <Route path="food-pantry" element={<FoodPantry />} />
-          <Route path="encapsulate" element={<Encapsulate />} />
-          <Route path="starting" element={<StartingPoint />} />
-          <Route path="discglobe" element={<DiscGlobe />} />
-          <Route path="access" element={<AccessibleAccess />} />
-          <Route path="nagano" element={<Nagano />} />
+          <Route path="food-pantry" element={<FoodPantry scrollToTop={scrollToTop} />} />
+          <Route path="encapsulate" element={<Encapsulate scrollToTop={scrollToTop} />} />
+          <Route path="starting" element={<StartingPoint scrollToTop={scrollToTop} />} />
+          <Route path="discglobe" element={<DiscGlobe scrollToTop={scrollToTop} />} />
+          <Route path="access" element={<AccessibleAccess scrollToTop={scrollToTop} />} />
+          <Route path="nagano" element={<Nagano scrollToTop={scrollToTop} />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
@@ -64,7 +69,7 @@ export default function App() {
 
 function PageNotFound(props) {
   return (
-    <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <main className=" place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="text-center">
         {/* #AE7E6F eee4e1 */}
         <p className="text-base font-semibold text-[#BD9589]">404</p>

@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function AboutPage() {
     return (
-        <div className="grid lg:grid-cols-3 justify-items-center items-center mx-24 sm:grid-cols-1 mt-12">
-            <div>
-                <img src="/images/self-crop.jpg" width={300} height={650} alt="self image" className="rounded-3xl" />
+        <div className="lg:flex lg:justify-items-center lg:items-center mx-28 lg:gap-10">
+            
+            <div className="flex justify-center w-full">
+                <img src="/images/self-crop.jpg" alt="self image" className="rounded-3xl" />
             </div>
-            <div className="lg:col-span-2 sm:col-span-1">
-                <div className="grid grid-cols-1 gap-3 text-gray-500">
+
+            <div className="">
+                <div className="text-gray-500 py-8 space-y-2">
                     <h2 className="font-semibold text-black">
                         Hello! I'm currently a junior majoring in informatics at University of Washington!
                     </h2>

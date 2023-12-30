@@ -119,7 +119,7 @@ export default function DiscGlobe(props) {
                             </div>
 
                             <div className="flex items-center justify-center">
-                                <Link className="w-20" to="/portfolio/discglobe">
+                                <Link className="w-20" onClick={props.scrollToTop}>
                                     <dd className="text-sm text-gray-500 hover:text-black underline underline-offset-2">
                                         Back to top
                                     </dd>
