@@ -6,7 +6,7 @@ export default function AboutPage() {
         <div className="lg:flex lg:justify-items-center lg:items-center mx-28 lg:gap-10">
             
             <div className="flex justify-center w-full">
-                <img src="/images/self-crop.jpg" alt="self image" className="rounded-3xl" />
+                <img src="/images/self-crop.jpg" alt="author standing in front of cherry blossom tree" className="rounded-3xl" />
             </div>
 
             <div className="">
