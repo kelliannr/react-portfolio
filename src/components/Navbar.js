@@ -68,16 +68,16 @@ export default function Navbar() {
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
 
-                                <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
+                                <Link to="/" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
                                     Home
                                 </Link>
-                                <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
+                                <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
                                     About
                                 </Link>
-                                <Link to="/portfolio" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
+                                <Link to="/portfolio" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
                                     Portfolio
                                 </Link>
-                                <Link to="Resume.pdf" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
+                                <Link to="Resume.pdf" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-6 text-gray-900 hover:underline hover:underline-offset-4">
                                     Resume
                                 </Link>
                             </div>

@@ -36,7 +36,7 @@ function CurrentProjects(props) {
 
 function ProjectArchive(props) {
     return (
-        <div class="mx-auto max-w-2xl py-8 lg:max-w-none lg:pt-0 lg:pb-8">
+        <div className="mx-auto max-w-2xl py-8 lg:max-w-none lg:pt-0 lg:pb-8">
             <h2 className="text-2xl font-bold text-gray-900 text-center">Project Archive</h2>
 
             {/* div containing project cards */}

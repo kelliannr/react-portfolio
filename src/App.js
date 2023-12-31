@@ -16,7 +16,7 @@ import DiscGlobe from "./components/projects/project-pages/DiscGlobe.js";
 import AccessibleAccess from "./components/projects/project-pages/AccessibleAccess.js";
 import Nagano from "./components/projects/project-pages/Nagano.js";
 
-import Footer from "./components/Footer.js";
+//import Footer from "./components/Footer.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="">
       {/* for each page to load at the top instead of in the middle on route change */}
       <ScrollToTop />
       <Navbar />
@@ -66,7 +66,7 @@ export default function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
