@@ -9,7 +9,8 @@ export default function Wordplay(props) {
             <ProjectNavSingle />
 
             <div className="bg-white">
-                <div className="mx-auto max-w-2xl items-center px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-6 lg:py-5 lg:pb-0">
+                {/* mx-auto max-w-2xl items-center px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-6 lg:py-5 lg:pb-0  */}
+                <div className="px-8 pt-2 lg:pt-1 lg:px-28 lg:py-5">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl flex items-center justify-center">
                         {/* title */}
                         Wordplay
@@ -25,26 +26,29 @@ export default function Wordplay(props) {
                     </p>
                 </div>
 
-                {/* imgs */}
-                <div className="flex gap-4 sm:gap-6 lg:gap-16 justify-center pt-8 pb-4">
+                {/* imgs 
+                    flex gap-4 sm:gap-6 lg:gap-16 justify-center pt-8 pb-4
+                */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center px-8 gap-4 lg:px-32 pt-4 lg:pb-4">
                     <img src="/images/project-imgs/wordplay/wordplay-pg1.png" width={500} height={250} alt="home page of wordplay" className="rounded-lg border border-black" />
                     <img src="/images/project-imgs/wordplay/wordplay-pg2.png" width={500} height={250} alt="a wordplay learn screen" className="rounded-lg border border-black" />
                 </div>
 
-                <div className="mx-auto max-w-2xl items-center px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-6 lg:py-5 lg:pb-0">
+                <div className="mx-auto max-w-2xl items-center px-6 py-4 lg:max-w-7xl lg:px-6 lg:py-5">
                     <p className="mt-0 text-gray-500">
                         We are currently working on issues for a 1.0 version. I am currently working on designing a visual clipboard for users to store their code for later use and also working with members of the development team to design a regular expression scheme for Wordplay that is also accessible. You can keep up to date with current issues and our next version plans that are linked on the home page of Wordplay, linked at <a href="https://wordplay.dev/" className="underline underline-offset-2 hover:text-black">wordplay.dev</a>.
                     </p>
                 </div>
 
-                <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:pb-12 lg:pt-6">
+                {/* mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:pb-12 lg:pt-6 */}
+                <div className="lg:max-w-7xl mx-32">
 
                     {/* project details */}
-                    <div>
-                        <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8 lg:grid-cols-1">
+                    {/* <div className="bg-blue-300"> */}
+                        <dl className="lg:space-y-8">
 
                             {/* features grid */}
-                            <div className="grid grid-cols-2 justify-items-center">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center pb-4">
 
                                 <div className="pt-4 w-96">
                                     <dt className="font-medium text-gray-900 flex items-center justify-center"> Visual Features</dt>
@@ -76,8 +80,9 @@ export default function Wordplay(props) {
                             </div>
 
                             {/* misc grid */}
-                            <div className="grid grid-cols-2 justify-items-center">
-                                <div className="">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
+
+                                <div className="pb-4">
                                     <dt className="font-medium text-gray-900 flex items-center justify-center">Tools</dt>
                                     <dd className="mt-2 text-sm text-gray-500">
                                         {/* tools */}
@@ -85,15 +90,13 @@ export default function Wordplay(props) {
                                     </dd>
                                 </div>
 
-                                <div className="pt-4">
+                                <div className="">
                                     <dt className="font-medium text-gray-900 flex items-center justify-center">Viewing</dt>
                                     <div className="grid grid-cols-1 justify-items-center">
-                                        <dd className="mt-2 text-sm text-gray-500">
-                                            {/* viewing */}
+                                        {/* viewing */}
+                                        <dd className="mt-2 text-sm text-gray-500 text-center">
                                             Visit Wordplay at <Link to="https://wordplay.dev" target="_blank" className="hover:text-black underline underline-offset-2">wordplay.dev</Link>!
-                                        </dd>
-                                        <dd className="mt-2 text-sm text-gray-500">
-                                            {/* viewing */}
+                                            <br />
                                             <strong>*DISCLAIMER: </strong>Wordplay is still in beta, meaning that there may be functionality issues and language localizations are still incomplete.
                                         </dd>
                                     </div>
@@ -101,7 +104,7 @@ export default function Wordplay(props) {
                                 </div>
                             </div>
 
-                            <div className="flex items-center justify-center">
+                            <div className="flex items-center justify-center pt-5 pb-8">
                                 <Link className="w-20" onClick={props.scrollToTop}>
                                     <dd className="text-sm text-gray-500 hover:text-black underline underline-offset-2">
                                         Back to top
@@ -110,7 +113,7 @@ export default function Wordplay(props) {
                             </div>
 
                         </dl>
-                    </div>
+                    {/* </div> */}
                 </div>
 
             </div>
