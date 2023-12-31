@@ -17,6 +17,7 @@ import AccessibleAccess from "./components/projects/project-pages/AccessibleAcce
 import Nagano from "./components/projects/project-pages/Nagano.js";
 
 import Footer from "./components/Footer.js";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 export default function App() {
   // const location = useLocation();
@@ -30,13 +31,17 @@ export default function App() {
   //   HSStaticMethods.autoInit();
   // }, [location.pathname]);
 
-  /* function from https://www.codingbeautydev.com/blog/react-scroll-to-top-of-page */
+  /* function from https://www.codingbeautydev.com/blog/react-scroll-to-top-of-page 
+     for the "back to top" link at bottom of project pages to work
+  */
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   return (
     <div className="flex flex-col h-screen justify-between">
+      {/* for each page to load at the top instead of in the middle on route change */}
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
@@ -62,7 +67,6 @@ export default function App() {
       </Routes>
 
       <Footer />
-      
     </div>
   );
 }
