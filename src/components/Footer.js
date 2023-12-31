@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Footer(props) {
     return (
-        <footer className="md:flex md:justify-between bg-[#eee4e1] pt-1">
+        <footer className="md:flex md:justify-between bg-white pt-1">
             <div className="grid grid-cols-1 mx-auto items-center justify-between p-6 md:px-8" aria-label="Global">
                 {/* <p className="text-center text-xs mb-2">
                     &copy; KelliAnn Ramirez. All rights reserved
