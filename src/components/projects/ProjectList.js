@@ -16,7 +16,7 @@ export default function ProjectList(props) {
 
 function CurrentProjects(props) {
     return (
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:pt-0 lg:pb-8">
+        <div className="mx-auto max-w-2xl lg:py-16 lg:max-w-none lg:pt-0 lg:pb-8">
             <h2 className="text-2xl font-bold text-gray-900 text-center">Current Projects</h2>
 
             {/* div containing project cards */}
@@ -36,7 +36,7 @@ function CurrentProjects(props) {
 
 function ProjectArchive(props) {
     return (
-        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:pt-0 lg:pb-8">
+        <div class="mx-auto max-w-2xl py-8 lg:max-w-none lg:pt-0 lg:pb-8">
             <h2 className="text-2xl font-bold text-gray-900 text-center">Project Archive</h2>
 
             {/* div containing project cards */}
