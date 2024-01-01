@@ -39,8 +39,6 @@ export default function Encapsulate(props) {
                     </p>
                 </div>
 
-                {/* --------- */}
-
                 <div className="lg:max-w-7xl mx-32">
 
                     {/* project details */}
@@ -115,76 +113,3 @@ export default function Encapsulate(props) {
         </div>
     );
 }
-
-/*
-<div className="lg:max-w-7xl mx-32">
-
-    {/* project details *
-    <dl className="lg:space-y-8">
-
-        {/* features grid *
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center pb-4">
-
-            <div className="pt-4 w-96">
-                <dt className="font-medium text-gray-900 flex items-center justify-center"> Visual Features</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* Visual Features *
-                    <p>Includes the following:</p>
-                    <ul className="list-disc pl-4">
-                        <li>Web application navigation at the top</li>
-                        <li>Footer documenting copyright and contributers</li>
-                        <li>Simple user interactive interfaces</li>
-                        <li>Visual, online representation of a user's "closet"</li>
-                        <li>Clothing items display their associated tags</li>
-                        <li><em>Browse</em> page displayed data persistent through page refreshes</li>
-                    </ul>
-                </dd>
-            </div>
-
-            <div className="pt-4 w-96">
-                <dt className="font-medium text-gray-900 flex items-center justify-center"> Technical Features</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* Technical Features *
-                    <p>Includes the following:</p>
-                    <ul className="list-disc pl-4">
-                        <li>Written in React</li>
-                        <li>Uses state and event handlers to support user interactivity</li>
-                        <li>Uses a real time database from Firebase to support a data driven web application</li>
-                        <li>User can upload clothing items and make outfits and see them on the <em>Browse</em> page </li>
-                        <li><em>Browse</em> page supports a search feature that changes dynamically changes inputs based on what is currently being displayed</li>
-                    </ul>
-                </dd>
-            </div>
-        </div>
-
-        {/* misc grid *
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-
-            <div className="pb-4">
-                <dt className="font-medium text-gray-900 flex items-center justify-center">Tools</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* tools *
-                    Figma, HTML, CSS, JavaScript, React, React Bootstrap, React Router, Firebase 
-                </dd>
-            </div>
-
-            <div className="">
-                <dt className="font-medium text-gray-900 flex items-center justify-center">Viewing</dt>
-                <div className="grid grid-cols-1 justify-items-center">
-                    {/* viewing *
-                    <dd className="mt-2 text-sm text-gray-500 text-center">
-                        Visit Encapsulate at <Link to="https://encapsulate-8a2f6.web.app/" target="_blank" className="hover:text-black underline underline-offset-2">encapsulate-8a2f6.web.app/</Link>!
-                        <br />
-                        <strong>*NOTE: </strong>Please understand that some behaviors of the app may be buggy and inconsistent. Additionally, depending on how long after December 2023 the app is being viewed, some functionality may not work at all because of database expiration.
-                    </dd>
-                </div>
-
-            </div>
-        </div>
-
-        <BackToTop />
-
-    </dl>
-</div>
-
-*/
