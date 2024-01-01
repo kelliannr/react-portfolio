@@ -39,8 +39,6 @@ export default function Nagano(props) {
                     </p>
                 </div>
 
-                {/* --------- */}
-
                 <div className="lg:max-w-7xl mx-32">
 
                     {/* project details */}
@@ -120,81 +118,3 @@ export default function Nagano(props) {
         </div>
     );
 }
-
-/*
-<div className="lg:max-w-7xl mx-32">
-
-    {/* project details *
-    <dl className="lg:space-y-8">
-
-        {/* features grid *
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center pb-4">
-
-            <div className="pt-4 w-96">
-                <dt className="font-medium text-gray-900 flex items-center justify-center"> Visual Features</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* Visual Features *
-                    <p>Includes the following:</p>
-                    <ul className="list-disc pl-4">
-                        <li>Overview of Nagano</li>
-                        <li>Brief Nagano History</li>
-                        <li>Nagano's climate</li>
-                        <li>Directions to Nagano from Tokyo and Osaka</li>
-                        <li>Hotels in Nagano</li>
-                        <li>Resturants in Nagano</li>
-                        <li>Tourist attractions</li>
-                        <li>Nagano map</li>
-                        <li>Nagano's yuru-chara</li>
-                    </ul>
-                </dd>
-            </div>
-
-            <div className="pt-4 w-96">
-                <dt className="font-medium text-gray-900 flex items-center justify-center"> Technical Features</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* Technical Features *
-                    <p>Includes the following:</p>
-                    <ul className="list-disc pl-4">
-                        <li>Horizontal list, acting as website navigation</li>
-                        <li>Navigation items change color depending on current page</li>
-                        <li>Image for website background</li>
-                        <li>Clickable images</li>
-                        <li>Image borders</li>
-                        <li>Paragraph text wraps around images</li>
-                        <li>Custom bulleted list icons</li>
-                        <li>Custom logo at the top of every page</li>
-                        <li>Consistent footer at bottom of every page</li>
-                    </ul>
-                </dd>
-            </div>
-        </div>
-
-        {/* misc grid *
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-
-            <div className="pb-4">
-                <dt className="font-medium text-gray-900 flex items-center justify-center">Tools</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* tools *
-                    HTML, CSS
-                </dd>
-            </div>
-
-            <div className="">
-                <dt className="font-medium text-gray-900 flex items-center justify-center">Viewing</dt>
-                <div className="grid grid-cols-1 justify-items-center">
-                    {/* viewing *
-                    <dd className="mt-2 text-sm text-gray-500 text-center">
-                        Click <Link to="https://kelliannr.github.io/hs-final-project/index.html" target="_blank" className="hover:text-black underline underline-offset-2">here</Link> to view the website.
-                    </dd>
-                </div>
-
-            </div>
-        </div>
-
-        <BackToTop />
-
-    </dl>
-</div>
-
-*/
