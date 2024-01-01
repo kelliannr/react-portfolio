@@ -40,8 +40,6 @@ export default function FoodPantry(props) {
                     <img src="/images/project-imgs/food-pantry/food-pantry-high-fidelity.jpg" width={500} height={250} alt="yuru-chara page of nagano website" className="rounded-lg border place-self-center" />
                 </div>
 
-                {/* --------- */}
-
                 <div className="lg:max-w-7xl mx-32">
 
                     {/* project details */}
@@ -112,73 +110,3 @@ export default function FoodPantry(props) {
         </div>
     );
 }
-
-/*
-<div className="lg:max-w-7xl mx-32">
-
-    {/* project details *
-    <dl className="lg:space-y-8">
-
-        {/* features grid *
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center pb-4">
-
-            <div className="pt-4 w-96">
-                <dt className="font-medium text-gray-900 flex items-center justify-center"> Visual Features</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* Visual Features *
-                    <p>Includes the following:</p>
-                    <ul className="list-disc pl-4">
-                        <li>App navigation along the bottom of screen</li>
-                        <li>Community recipe page to view recipes submitted by the community</li>
-                        <li>Current stock of food pantry inventory page</li>
-                        <li>Checkout page with summary of order</li>
-                        <li>Order history sorted by weeks of the UW quarter</li>
-                    </ul>
-                </dd>
-            </div>
-
-            <div className="pt-4 w-96">
-                <dt className="font-medium text-gray-900 flex items-center justify-center"> Technical Features</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* Technical Features *
-                    <p>Includes the following:</p>
-                    <ul className="list-disc pl-4">
-                        <li>Sign in/up screens</li>
-                        <li>Ability to submit own recipe on <em>Community Recipe</em> page</li>
-                        <li>Ability to add items to cart</li>
-                        <li>When placing order, can select a time and date for in person pick up</li>
-                        <li>Profile/order history page tells you the points (food pantry currency) you have remaining</li>
-                    </ul>
-                </dd>
-            </div>
-        </div>
-
-        {/* misc grid *
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-
-            <div className="pb-4">
-                <dt className="font-medium text-gray-900 flex items-center justify-center">Tools</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                    {/* tools *
-                    Figma
-                </dd>
-            </div>
-
-            <div className="">
-                <dt className="font-medium text-gray-900 flex items-center justify-center">Viewing</dt>
-                <div className="grid grid-cols-1 justify-items-center">
-                    {/* viewing *
-                    <dd className="mt-2 text-sm text-gray-500 text-center">
-                        Click <Link to="https://www.figma.com/proto/Xuxu5ohep0lSYZtyTnBQUu/%22Paper%22-Prototype?page-id=0%3A1&type=design&node-id=2-2&viewport=1152%2C361%2C0.21&t=XYI9cD6VurzehYgk-1&scaling=scale-down&starting-point-node-id=2%3A2&show-proto-sidebar=1&mode=design" target="_blank" className="hover:text-black underline underline-offset-2">here</Link> to view the Figma protoype.
-                    </dd>
-                </div>
-
-            </div>
-        </div>
-
-        <BackToTop />
-
-    </dl>
-</div>
-
-*/
